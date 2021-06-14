@@ -1,0 +1,233 @@
+* {
+  font-family: "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+/* properties */
+.phone-view {
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 90vh;
+  margin: auto;
+}
+.content-bg {
+  background-image: url(bg-for-phone.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.5px);
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  width: 277.15px;
+  height: 506px;
+  border-radius: 30px;
+}
+.content-view {
+  border-radius: 30px;
+  width: 277.15px;
+  height: 506px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.calculator-style {
+  background-color: #000000;
+  border-radius: 30px;
+  width: 277.15px;
+  height: 506px;
+}
+.inside-view {
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.row {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.btn-operator {
+  background: #fe9505;
+  color: #ffffff;
+  font-size: 30px !important;
+}
+.btn-zero {
+  width: 107px !important;
+  grid-column: 1 / span 2;
+  justify-content: flex-start !important;
+  padding-left: 23px !important;
+  vertical-align: middle;
+}
+.btn-numbers {
+  background-color: #333333;
+  color: #ffffff;
+}
+.btn-options {
+  background-color: #a5a5a5;
+}
+.btn {
+  border: none !important;
+  border-radius: 100px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: auto 5px;
+  cursor: pointer;
+  transition: filter 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:active,
+.btn:focus {
+  filter: brightness(120%);
+}
+.value {
+  font-size: 80px;
+  font-weight: 300;
+  font-size-adjust: auto;
+  text-size-adjust: auto;
+  margin-right: 10px;
+  text-align: right;
+  color:#ececec
+}
+.close-dropdown {
+  border: 2px solid #ececec;
+  border-radius: 100px;
+  width: 40%;
+  cursor: pointer;
+}
+.row-close {
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.icon-calculator {
+  border: none !important;
+  flex-direction: column;
+  border-radius: 0px;
+  background-color: transparent;
+  z-index: 10px;
+  cursor: pointer;
+}
+.icon-calculator .fst-row {
+  display: flex;
+  flex-direction: row;
+}
+.icon-calculator .snd-row {
+  display: flex;
+  flex-direction: row;
+}
+.text-icon {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  justify-content: center !important;
+  align-items: center;
+  vertical-align: middle;
+}
+.text-equiv {
+  font-size: 40px;
+  font-weight: 700;
+  justify-content: center !important;
+  align-items: center;
+  vertical-align: middle;
+  color: #a5a5a5 !important;
+}
+.mdas {
+  background-color: #fe9505;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 20px;
+  border-bottom: solid 2px#db7827;
+  border-right: solid 2px#db7827;
+}
+.mdas2 {
+  background-color: #fe9505;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  border-top-right-radius: 20px;
+  border-bottom: solid 2px#db7827;
+}
+
+.mdas3 {
+  background-color: #fe9505;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  border-bottom-left-radius: 20px;
+  border-right: solid 2px#db7827;
+}
+.equiv {
+  background-color: #ececec;
+  /* padding: 10px; */
+  height: 50px;
+  width: 50px;
+  border-bottom-right-radius: 20px;
+}
+.app-bar{
+  background-color: rgba(255, 255, 255, 0.37);
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 5px 15px 5px;
+  border-radius: 15px;
+  padding: 5px;
+}
+.app-icon{
+width: 40px;
+height: 40px;
+border-radius: 10px;
+margin: 4px 3px 2px 3px;
+bottom:   0;
+}
+
+/* //animation */
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.animate-calc-in {
+  animation: zoom-in 0.5s ease-in-out;
+}
+.animate-calc-out {
+  animation: zoom-out 0.5s ease-in-out;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ios_icon.png" type="image/x-icon">
+    <title>IOS Calculator App</title>
+
+</head>
+
+<body>
+    <div class="phone-view">
+        <div class="content-bg"></div>
+        <div class="content-view">
+            <div>
+            </div>
+                <!-- icon -->
+                <button class="icon-calculator" id="calculator-iconBtn">
+                    <div class="fst-row">
+                        <div class="text-icon mdas">&plus;</div>
+                        <div class="text-icon mdas2">&minus;</div>
+                    </div>
+                    <div class="snd-row">
+                        <div class="text-icon mdas3">&times;</div>
+                        <div class="text-equiv equiv">&equals;</div>
+                    </div>
+                </button>
+
+                <div class="app-bar" id="app-bar">
+                    <a href=""><img src="call.png" alt="call_icon" class="app-icon"></a>
+                    <a href=""><img src="github.png" alt="github_icon" class="app-icon"></a>
+                    <a href=""><img src="mail.png" alt="mail_icon" class="app-icon"></a>
+                    <a href=""><img src="safari-icon.png" alt="safari_icon" class="app-icon"></a>
+                </div>
+            <!-- calculator -->
+            <div class="calculator-style" id="calculator-interface">
+                <div class="inside-view">
+                    <div class="value">0</div>
+                    <div class="row">
+                        <div class="btn btn-options ac">AC</div>
+                        <div class="btn btn-options pm">±</div>
+                        <div class="btn btn-options percent">%</div>
+                        <div class="btn btn-operator division">÷</div>
+                    </div>
+                    <div class="row">
+                        <div class="btn btn-numbers number-7">7</div>
+                        <div class="btn btn-numbers number-8">8</div>
+                        <div class="btn btn-numbers number-9">9</div>
+                        <div class="btn btn-operator multiplication">×</div>
+                    </div>
+                    <div class="row">
+                        <div class="btn btn-numbers number-4">4</div>
+                        <div class="btn btn-numbers number-5">5</div>
+                        <div class="btn btn-numbers number-6">6</div>
+                        <div class="btn btn-operator subtraction">-</div>
+                    </div>
+                    <div class="row">
+                        <div class="btn btn-numbers number-1">1</div>
+                        <div class="btn btn-numbers number-2">2</div>
+                        <div class="btn btn-numbers number-3">3</div>
+                        <div class="btn btn-operator addition">+</div>
+                    </div>
+                    <div class="row">
+                        <div class="btn btn-zero btn-numbers number-0">0</div>
+                        <div class="btn btn-numbers decimal">.</div>
+                        <div class="btn btn-operator equal">=</div>
+                    </div>
+                    <div class="row-close">
+                        <button id="close-form" class=close-dropdown>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+
+</html>
